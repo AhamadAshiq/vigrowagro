@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect /page to /page.html if the file exists
+RewriteCond %{index}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
